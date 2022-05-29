@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: blanchedalmond;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.header-title
+{
+    color:steelblue;
+}
+
+header,
+form
+{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+.rs-container
+{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    color: #555;
+    font-weight: bold;
+}
+
+.rs-btn
+{
+    border-radius: 20px;
+    margin: auto;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+
+.rs-btn-icon{
+    color: lightsalmon;
+    background: #fff;
+    transition: all 0.33 ease;
+}
+
+.rs-btn:hover
+{
+    background: lightsalmon;
+    color: #fff;
+}
+
+form input
+{
+  outline: none;
+}
+
+form button
+{
+    color: lightsalmon;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.33 ease;
+}
+
+form button:hover
+{
+    background: lightsalmon;
+    color: #fff;
+}
+
+.tdl-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tdl{
+    min-width: 30%;
+    list-style: none;
+}
+
+
+.todo
+{
+    margin: 0.5rem;
+    background: #fff;
+    color: #333;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.tdl-item
+{
+    padding: 0 0.8rem;
+}
+
+
+.okBtn
+{
+    background: lightgreen;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.delBtn
+{
+    background: lightcoral;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.fa-trash,
+.fa-check
+{
+    pointer-events: none;
+}
+
+.completed
+{
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+.disappear
+{
+    transform: translateY(8rem) rotateZ(36deg);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select
+{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select
+{
+    color: #333;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select::after
+{
+    color: #fff;
+    content: "\25BC";
+    position: absolute;
+    background: wheat;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.88 ease-in-out;
+}
+
+.select:hover::after
+{
+    background: #fff;
+    color: wheat;
+}
